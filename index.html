@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2 class="quizHeader">Capital City Quiz!</h2>
+
+        <table style="width:583px; position: relative; left: 27%;">
+            <tr>
+                <td>
+                    <div>
+                        <p class="question">Kirgiztan:</p>
+
+                        <ul>
+                            <input id= "forAnswer1" class="answer" type="radio" name="q1" value="1">
+                            <label for= "forAnswer1" id="correctString1">Bishkek</label>
+                            <br>
+                            <input id= "forAnswer2" class="answer" type="radio" name="q1" value="0">
+                            <label for= "forAnswer2">Jalal-Abad</label>
+                            <br>
+                            <input id= "forAnswer3" class="answer" type="radio" name="q1" value="0">
+                            <label for= "forAnswer3">Talas</label>
+                            <br>
+                            <input id= "forAnswer4" class="answer" type="radio" name="q1" value="0">
+                            <label for= "forAnswer4">Lipovka</label>
+                        </ul>
+                    </div>
+                </td>
+                <td>
+                    <div>
+                        <p class="question">Kazakhstan:</p>
+
+                        <ul>
+                            <input id= "forAnswer5" class="answer" type="radio" name="q2" value="0">
+                            <label for= "forAnswer5">Taraz</label>
+                            <br>
+                            <input id= "forAnswer6" class="answer" type="radio" name="q2" value="1">
+                            <label for= "forAnswer6" id="correctString2">Astana</label>
+                            <br>
+                            <input id= "forAnswer7" class="answer" type="radio" name="q2" value="0">
+                            <label for= "forAnswer7">Pochinki</label>
+                            <br>
+                            <input id= "forAnswer8" class="answer" type="radio" name="q2" value="0">
+                            <label for= "forAnswer8">Shymkent</label>
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div>
+                        <p class="question">Cote d'Ivoire:</p>
+
+                        <ul>
+                            <input id= "forAnswer9" class="answer" type="radio" name="q3" value="0">
+                            <label for= "forAnswer9">Abidjan</label>
+                            <br>
+                            <input id= "forAnswer10" class="answer" type="radio" name="q3" value="1">
+                            <label for= "forAnswer10" id="correctString3">Yamoussoukoro</label>
+                            <br>
+                            <input id= "forAnswer11" class="answer" type="radio" name="q3" value="0">
+                            <label for= "forAnswer11">Daloa</label>
+                            <br>
+                            <input id= "forAnswer12" class="answer" type="radio" name="q3" value="0">
+                            <label for= "forAnswer12">Gagnoa</label>
+                        </ul>
+                    </div>
+                </td>
+                <td>
+                    <div>
+                        <p class="question">Rwanda</p>
+
+                        <ul>
+                            <input id= "forAnswer13" class="answer" type="radio" name="q4" value="0">
+                            <label for= "forAnswer13">Goma</label>
+                            <br>
+                            <input id= "forAnswer14" class="answer" type="radio" name="q4" value="1">
+                            <label for= "forAnswer14" id="correctString4">Kigali</label>
+                            <br>
+                            <input id= "forAnswer15" class="answer" type="radio" name="q4" value="0">
+                            <label for= "forAnswer15">Bukavu</label>
+                            <br>
+                            <input id= "forAnswer16" class="answer" type="radio" name="q4" value="0">
+                            <label for= "forAnswer16">Butare</label>
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <br />
+        <div class="submitter">
+            <input class="quizSubmit" id="submitButton" onClick="submitQuiz()" type="submit" value="Submit" />
+        </div>
+
+        <!--show only wrong answers on submit-->
+        <div class="correction">
+            <div class="quizAnswers" id="correctAnswer1"></div>
+            <div class="quizAnswers" id="correctAnswer2"></div>
+            <div class="quizAnswers" id="correctAnswer3"></div>
+            <div class="quizAnswers" id="correctAnswer4"></div>
+        </div>
+        <!--show score upon submit-->
+        <div>
+            <h2 class="quizScore" id="userScore"></h2>
+        </div>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
